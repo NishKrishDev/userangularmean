@@ -1,0 +1,19 @@
+.navbar {
+    background-color: antiquewhite;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul-navbar {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ul-navbar li {
+    list-style: none;
+    cursor: pointer;
+}

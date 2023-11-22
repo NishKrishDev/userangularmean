@@ -1,0 +1,26 @@
+<form [formGroup]="userFrom" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="name">Name: </label>
+        <input id="name" type="text" formControlName="name">
+    </div>
+
+    <div>
+        <label for="username">Username: </label>
+        <input id="username" type="text" formControlName="username">
+    </div>
+
+
+    <button type="submit">Submit</button>
+</form>
+
+<div class="singleUserDetail">
+    <div class="users" >
+        <p>Name : {{userData.name}}</p>
+        <p>Username : {{userData.username}}</p>
+        <p>Email : {{userData.email}}</p>
+        <p>Phone: {{userData.phone}}</p>
+        <p>Website: {{userData.website}}</p>
+        <p>Address: {{userData.address.street}}, {{userData.address.suite}}, {{userData.address.city}}, {{userData.address.zipcode}}</p>
+        <p>Company: {{userData.company.name}}, {{userData.company.catchPhrase}}, {{userData.company.bs}}</p>
+    </div>
+</div>

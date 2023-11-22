@@ -1,0 +1,16 @@
+<h3>All Users Component</h3>
+
+<div class="all-users">
+    <h4>Number of Users {{allUsers.length}}</h4><br>
+    <div class="users" *ngFor="let user of allUsers" routerLink="singleUser/{{user.id}}">
+        <p>Id: {{user.id}}</p>
+        <p>Name : {{user.name}}</p>
+        <p>Username : {{user.username}}</p>
+        <p>Email : {{user.email}}</p>
+        <p>Phone: {{user.phone}}</p>
+        <p>Website: {{user.website}}</p>
+        <p>Address: {{user.address.street}}, {{user.address.suite}}, {{user.address.city}}, {{user.address.zipcode}}</p>
+        <p>Company: {{user.company.name}}, {{user.company.catchPhrase}}, {{user.company.bs}}</p>
+    </div>
+
+</div>

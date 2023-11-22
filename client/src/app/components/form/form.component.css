@@ -1,0 +1,23 @@
+form {
+    height: 200px;
+    width: 30%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+button {
+    width: 20%;
+    margin: 5px auto;
+}
+
+.singleUserDetail {
+    width: 50%;
+    margin: auto;
+}
+
+.singleUserDetail p {
+    margin-bottom: 10px;
+}
